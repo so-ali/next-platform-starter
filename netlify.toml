@@ -1,3 +1,8 @@
 [build]
-  publish = ".next"
-  command = "npm run build"
+  publish = "public"
+
+[[redirects]]
+  from = "/*"
+  to = "/api/index"
+  status = 200
+  force = true
