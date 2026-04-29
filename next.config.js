@@ -2,17 +2,14 @@
 const nextConfig = {
   trailingSlash: false,
   
-  async rewrites() {
+   rewrites() {
     return [
       {
         source: '/:path*',
         destination: '/api/index',
       },
     ];
-  },
-  
-  // For Netlify deployment
-  output: 'standalone',
+  }
 }
 
 module.exports = nextConfig
